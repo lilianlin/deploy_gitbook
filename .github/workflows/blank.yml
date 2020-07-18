@@ -17,11 +17,10 @@ jobs:
     - name: 'Installing gitbook cli'
       run: npm install -g gitbook-cli
     - name: 'Generating distributable files'
-      run: |
-        gitbook install
-        gitbook build
+      run:  gitbook build ./ ./docs
     - uses: peaceiris/actions-gh-pages@v2.5.0
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./_book
+        allow_empty_commit: true
+        enable_jekyll: true
+        PUBLISH_DIR: ./docs
