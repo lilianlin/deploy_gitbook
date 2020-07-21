@@ -1,5 +1,5 @@
 # 建立 GitHub 项目
-建立用于托管 Gitbook 的项目，并完成相应项目配置
+建立用于托管 Gitbook 的项目，并完成项目配置。在 master 分支提交 Gitbook 后，会自动触发 GitHub Actions 完成 Gitbook 的 build，并将 build 结果 部署到 gh-pages 分支。然后通过 GitHub Pages 即可浏览 gh-pages 分支中 Gitbook 中的发布内容。
 
 ## 新建 GitHub 项目
 略
