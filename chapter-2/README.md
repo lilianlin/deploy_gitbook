@@ -28,6 +28,7 @@ Gitbook build时的配置文件，可缺省。
 ### SUMMARY
 SUMMARY 为 Gitbook 的导航。通过 SUMMARY 将所有文件连接起来。
 
+例如：
 ```markdown
 # Context
 
